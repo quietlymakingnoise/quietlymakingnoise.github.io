@@ -278,3 +278,8 @@ body.no-touch .boxInnerArtist:hover .titleBox, body.touch .boxInnerArtist.touchF
      padding-bottom: 50%;
    }
 }
+
+.image {
+  position: relative;
+width: 100%; /* for IE 6 */
+}
