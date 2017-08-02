@@ -12,7 +12,7 @@ body {
 header {
   width: 100%;
   float: left;
-  border-bottom: solid;
+  padding-bottom: 70px
 }
 
 * {
@@ -70,14 +70,14 @@ a {
 
 /* Nav */
 
-nav {
+ nav {
   margin: 20px;
   float: right;
   display: inline;
   text-align: center;
 }
 
-ul {
+ ul {
   overflow: auto;
   list-style-type: none;
 }
@@ -111,6 +111,15 @@ li.active a {
   background: yellow;
 }
 
+.navbar-fixed {
+  width: 100%;
+  position: fixed;
+
+z-index: 999;
+background: white;
+border-bottom: solid;
+}
+
 /* Page Border */
 
 .contentWrapper {
@@ -126,7 +135,7 @@ li.active a {
   text-transform: uppercase;
   text-decoration: underline;
   text-align: center;
-  padding-top: 30px;
+  padding-top: 60px;
   padding-bottom: 30px;
 }
 
@@ -268,7 +277,7 @@ body.no-touch .boxInnerArtist:hover .titleBox, body.touch .boxInnerArtist.touchF
 
 .hero h1 {
   margin: 0;
-  padding: 100px;
+  padding: 10%;
   color: white;
   font-size: 5em;
 }
