@@ -314,3 +314,8 @@ body.no-touch .boxInnerArtist:hover .titleBox, body.touch .boxInnerArtist.touchF
 .hero h1 span {
   background: black;
 }
+
+.artistImage {
+  max-width: 30%;
+  float: right;
+}
