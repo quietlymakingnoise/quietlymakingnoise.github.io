@@ -1,5 +1,9 @@
 /* General Styling */
 
+html {
+  height: 100%;
+}
+
 body {
   font-family: 'Raleway', sans-serif;
   font-weight: normal;
@@ -39,16 +43,19 @@ a {
 .logo {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
-  font-size: 2.5em;
+  font-size: 2em;
   text-align: center;
   text-transform: uppercase;
   display: inline;
   float: left;
-  margin: 30px;
+  margin: 20px;
+  padding-top: 5px;
+
 }
 
 .logo a {
   color: #000;
+
 }
 
 .logo a:visited {
@@ -58,7 +65,7 @@ a {
 /* Nav */
 
 nav {
-  margin: 30px;
+  margin: 20px;
   float: right;
   display: inline;
   text-align: center;
@@ -240,7 +247,7 @@ body.no-touch .boxInnerArtist:hover .titleBox, body.touch .boxInnerArtist.touchF
       padding-bottom: 33.3%;
    }
 }
-@media only screen and (max-width : 1290px) and (min-width : 1051px) {
+@media only screen and (max-width : 2500px) and (min-width : 1051px) {
    /* Medium desktop: 4 tiles */
    .box {
      width: 33.3%;
@@ -271,7 +278,7 @@ body.no-touch .boxInnerArtist:hover .titleBox, body.touch .boxInnerArtist.touchF
       padding-bottom: 50%;
    }
 }
-@media only screen and (max-width : 1290px) and (min-width : 1051px) {
+@media only screen and (max-width : 2500px) and (min-width : 1051px) {
    /* Medium desktop: 4 tiles */
    .boxArtist {
      width: 50%;
@@ -279,7 +286,31 @@ body.no-touch .boxInnerArtist:hover .titleBox, body.touch .boxInnerArtist.touchF
    }
 }
 
-.image {
-  position: relative;
-width: 100%; /* for IE 6 */
+/* INFO */
+
+.icons {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.fa {
+  margin: 0 20px;
+}
+
+/* ARTIST */
+
+.hero {
+  background-image: url("../img/screen-9023.jpg");
+  border-bottom: solid;
+}
+
+.hero h1 {
+  margin: 0;
+  padding: 100px;
+  color: white;
+  font-size: 5em;
+}
+
+.hero h1 span {
+  background: black;
 }
