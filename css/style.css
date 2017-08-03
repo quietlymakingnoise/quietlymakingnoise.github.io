@@ -247,7 +247,6 @@ body.no-touch .boxInnerArtist:hover .titleBox, body.touch .boxInnerArtist.touchF
   margin-bottom: 0;
 }
 
-
 /* INFO */
 
 .icons {
@@ -277,4 +276,37 @@ body.no-touch .boxInnerArtist:hover .titleBox, body.touch .boxInnerArtist.touchF
 
 .hero h1 span {
   background: black;
+}
+
+.latest-container {
+  display: -webkit-flex;
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+  flex-direction: row;
+  border-style: dashed;
+  border-color: yellow;
+}
+
+.latest-content {
+  width: 50%;
+  margin: 20px;
+}
+
+.latest-content img {
+  max-width: 70%;
+  float: right;
+}
+
+.latest-content h1 {
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+.latest-content p {
+  margin: 0;
+  padding-top: 40px;
+  text-align: left;
+  font-size: 1em;
 }

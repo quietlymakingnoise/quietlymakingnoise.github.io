@@ -24,6 +24,30 @@
      margin: 20px auto;
    }
 
+   .latest-container {
+     flex-direction: column-reverse;
+     border-style: none;
+   }
+
+   .latest-content {
+     width: 100%;
+     margin: 0;
+   }
+
+   .latest-content h1 {
+     padding-top: 40px;
+     text-align: center;
+   }
+
+   .latest-content p {
+     text-align: center;
+   }
+
+   .latest-content img {
+     max-width: 100%;
+     float: center;
+   }
+
 
 
 }
@@ -52,6 +76,31 @@
      width: 100%;
      margin: 20px auto;
    }
+
+   .latest-container {
+     flex-direction: column-reverse;
+     border-style: none;
+   }
+
+   .latest-content {
+     width: 100%;
+     margin: 0;
+   }
+
+   .latest-content h1 {
+     padding-top: 40px;
+     text-align: center;
+   }
+
+   .latest-content p {
+     text-align: center;
+   }
+
+   .latest-content img {
+     max-width: 100%;
+     float: center;
+   }
+
 
 }
 @media only screen and (max-width : 1050px) and (min-width : 651px) {
