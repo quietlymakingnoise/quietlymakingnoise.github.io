@@ -83,7 +83,7 @@ ul {
 }
 
 li {
-  height: 25px;
+  height: 20px;
   float: left;
   margin-right: 0;
   border-right: 1px solid #aaa;
@@ -123,6 +123,8 @@ li.active a {
   display: inline;
   float: left;
 }
+
+
 
 
 /* Page Border */
@@ -316,6 +318,8 @@ body.no-touch .boxInnerArtist:hover .titleBox, body.touch .boxInnerArtist.touchF
   font-size: 1em;
 }
 
+/* Release */
+
 .heroSDXN {
   background-image: url("../img/screen-res.jpg");
   border-bottom: solid;
@@ -339,4 +343,15 @@ body.no-touch .boxInnerArtist:hover .titleBox, body.touch .boxInnerArtist.touchF
 
 .heroSDXN h1 span {
   background: black;
+}
+
+/* Artist */
+
+.releaseContainer {
+  display: -webkit-flex;
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+  flex-direction: row;
+  background: grey;
 }

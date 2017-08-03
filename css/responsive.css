@@ -11,7 +11,17 @@
    }
 
    .desktop {
-     display: none;
+     display: -webkit-flex;
+     display: flex;
+     width: 100%;
+     margin: 0 auto;
+     padding: 0;
+     align-items: left;
+     justify-content: center;
+     text-align: center;
+     font-size: 0.7em;
+     padding-right: 5%;
+
    }
 
    .mobile: {
@@ -21,7 +31,7 @@
    .logo {
      font-size: 1.5em;
      width: 100%;
-     margin: 20px auto;
+     margin: 10px auto;
    }
 
    .latest-container {
@@ -64,7 +74,17 @@
    }
 
    .desktop {
-     display: none;
+     display: -webkit-flex;
+     display: flex;
+     width: 100%;
+     margin: 0 auto;
+     padding: 0;
+     align-items: left;
+     justify-content: center;
+     text-align: center;
+     font-size: 0.7em;
+     padding-right: 2.5%;
+
    }
 
    .mobile {
