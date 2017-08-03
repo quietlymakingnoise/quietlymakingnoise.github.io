@@ -262,9 +262,11 @@ body.no-touch .boxInnerArtist:hover .titleBox, body.touch .boxInnerArtist.touchF
 /* ARTIST */
 
 .hero {
-  background-image: url("../img/screen-9023.jpg");
+  background-image: url("../img/modularz.jpg");
   border-bottom: solid;
   height: 100vh;
+  background-size: cover;
+  background-position: center;
 }
 
 .hero h1 {
@@ -296,6 +298,7 @@ body.no-touch .boxInnerArtist:hover .titleBox, body.touch .boxInnerArtist.touchF
 .latest-content img {
   max-width: 70%;
   float: right;
+  border-radius: 100%;
 }
 
 .latest-content h1 {
