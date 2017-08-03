@@ -315,3 +315,28 @@ body.no-touch .boxInnerArtist:hover .titleBox, body.touch .boxInnerArtist.touchF
   text-align: left;
   font-size: 1em;
 }
+
+.heroSDXN {
+  background-image: url("../img/screen-res.jpg");
+  border-bottom: solid;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.heroSDXN {
+  width: 100%;
+  float: left;
+  padding-top: 40px;
+}
+
+.heroSDXN h1 {
+  margin: 0;
+  padding-top: 40vh;
+  color: white;
+  font-size: 5em;
+}
+
+.heroSDXN h1 span {
+  background: black;
+}
