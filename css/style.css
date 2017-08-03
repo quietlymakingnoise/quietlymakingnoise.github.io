@@ -288,6 +288,8 @@ body.no-touch .boxInnerArtist:hover .titleBox, body.touch .boxInnerArtist.touchF
   flex-direction: row;
   border-style: dashed;
   border-color: black;
+  align-items: center;
+  justify-content: center;
 }
 
 .latest-content {
