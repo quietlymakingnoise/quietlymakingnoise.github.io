@@ -14,14 +14,20 @@
      display: -webkit-flex;
      display: flex;
      width: 100%;
-     margin: 0 auto;
+     margin: auto;
      padding: 0;
-     align-items: left;
+     align-items: center;
      justify-content: center;
      text-align: center;
      font-size: 0.7em;
-     padding-right: 5%;
+   }
 
+   .vinyl {
+     display: none;
+   }
+
+   .item {
+     align-self: center;
    }
 
    .mobile: {
@@ -61,7 +67,7 @@
 
 
 }
-@media only screen and (max-width : 768px) and (min-width : 481px) {
+@media only screen and (max-width : 800px) and (min-width : 481px) {
    /* Tablet view: 2 tiles */
    .box {
       width: 50%;
@@ -83,8 +89,15 @@
      justify-content: center;
      text-align: center;
      font-size: 0.7em;
-     padding-right: 2.5%;
 
+   }
+
+   .vinyl {
+     display: none;
+   }
+
+   .item {
+     align-self: center;
    }
 
    .mobile {
