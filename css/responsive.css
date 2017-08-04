@@ -67,7 +67,7 @@
 
 
 }
-@media only screen and (max-width : 800px) and (min-width : 481px) {
+@media only screen and (max-width : 810px) and (min-width : 481px) {
    /* Tablet view: 2 tiles */
    .box {
       width: 50%;
