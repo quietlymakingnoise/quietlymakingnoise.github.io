@@ -26,6 +26,15 @@ h1 {
   font-size: 2em;
 }
 
+h3 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 1em;
+  text-transform: uppercase;
+  text-align: center;
+  padding-bottom: 30px;
+}
+
 img {
   max-width: 100%;
 }
@@ -324,6 +333,7 @@ body.no-touch .boxInnerArtist:hover .titleBox, body.touch .boxInnerArtist.touchF
 .latest-content h1 {
   margin: 0;
   padding: 0;
+  padding-top: 50px;
   text-align: left;
 }
 
@@ -336,34 +346,7 @@ body.no-touch .boxInnerArtist:hover .titleBox, body.touch .boxInnerArtist.touchF
 
 /* Release */
 
-.heroSDXN {
-  background-image: url("../img/screen-res.jpg");
-  border-bottom: solid;
-  height: 100vh;
-  background-size: cover;
-  background-position: center;
-}
-
-.heroSDXN {
-  width: 100%;
-  float: left;
-  padding-top: 40px;
-}
-
-.heroSDXN h1 {
-  margin: 0;
-  padding-top: 40vh;
-  color: white;
-  font-size: 5em;
-}
-
-.heroSDXN h1 span {
-  background: black;
-}
-
-/* Artist */
-
-
-#releaseLabel {
-  font-size: 4em;
+#sdxn.hero {
+    background-image: url("../img/screen-res.jpg");
+    font-size: 0.7em;
 }
