@@ -366,3 +366,9 @@ body.no-touch .boxInnerArtist:hover .titleBox, body.touch .boxInnerArtist.touchF
     background-image: url("../img/screen-res.jpg");
     font-size: 0.7em;
 }
+
+.audio-player {
+  padding-top: 10px;
+  margin: 0 auto;
+  width: 100%;
+}
