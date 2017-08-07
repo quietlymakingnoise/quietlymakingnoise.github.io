@@ -48,6 +48,10 @@ img {
   max-width: 100%;
 }
 
+#fade {
+  display: none;
+}
+
 
 /* Remove all link decorations */
 
@@ -98,13 +102,10 @@ a:visited {
   text-align: center;
 }
 
-
 .icon-vynil {
   font-size: 42px;
   text-align: center;
 }
-
-
 
 
 /* Nav */
@@ -162,8 +163,6 @@ li.active a {
   display: inline;
   float: left;
 }
-
-
 
 
 /* Page Border */
@@ -290,6 +289,7 @@ body.no-touch .boxInnerArtist:hover .titleBox, body.touch .boxInnerArtist.touchF
   margin-bottom: 0;
 }
 
+
 /* INFO */
 
 .icons {
@@ -360,11 +360,12 @@ body.no-touch .boxInnerArtist:hover .titleBox, body.touch .boxInnerArtist.touchF
   font-size: 1em;
 }
 
+
 /* Release */
 
 #sdxn.hero {
-    background-image: url("../img/screen-res.jpg");
-    font-size: 0.7em;
+  background-image: url("../img/screen-res.jpg");
+  font-size: 0.7em;
 }
 
 .audio-player {
