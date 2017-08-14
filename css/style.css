@@ -15,13 +15,15 @@ header {
   padding-bottom: 20px;
 }
 
-footer {
-  clear: both;
-  text-align: center;
-  height: 50px;
-  border-top: solid;
-  font-size: 0.5em;
-  padding-top: 25px;
+
+button {
+  padding: 10px 30px;
+  border-radius: 100px;
+  margin: 0 auto;
+  background: none;
+  border: 0.5px solid black;
+  color: black;
+  margin-top: 20px;
 }
 
 * {
@@ -191,11 +193,16 @@ li.active a {
   text-decoration: underline;
   text-align: center;
   padding-top: 60px;
-  padding-bottom: 40px;
+  padding-bottom: 20px;
 
 }
 
+.content h3 {
+  padding-bottom: 20px;
+}
+
 .content p {
+  padding-top: 40px;
   text-align: center;
 }
 
@@ -212,6 +219,7 @@ li.active a {
 .galleryWrap {
   overflow: hidden;
   margin: 10px;
+  padding-top: 60px;
 }
 
 .box {
@@ -326,10 +334,11 @@ body.no-touch .boxInnerArtist:hover .titleBox, body.touch .boxInnerArtist.touchF
 /* INFO */
 
 .icons {
-  text-align: center;
-  margin: 0 auto;
-  padding-top: 40px;
+  text-align: left;
+  padding-top: 80px;
   padding-bottom: 40px;
+  align-items: center;
+  clear: both;
 }
 
 .fa {
@@ -352,7 +361,7 @@ body.no-touch .boxInnerArtist:hover .titleBox, body.touch .boxInnerArtist.touchF
   position: absolute;
   bottom: 0;
   left: 0;
-  margin: 0px;
+  margin: 0px 16px;
   padding: 0px;
   color: white;
   font-size: 5em;
@@ -360,19 +369,6 @@ body.no-touch .boxInnerArtist:hover .titleBox, body.touch .boxInnerArtist.touchF
   text-decoration: none;
 }
 
-.stick {
-  font-weight: 700;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  margin: 0px;
-  padding: 0px;
-  color: white;
-  font-size: 5em;
-
-  text-decoration: none;
-
-}
 
 
 
@@ -385,16 +381,16 @@ body.no-touch .boxInnerArtist:hover .titleBox, body.touch .boxInnerArtist.touchF
   border-color: black;
   align-items: center;
   justify-content: center;
-  margin-top: 20px;
+  margin-top: 40px;
 }
 
 .latest-content {
   width: 50%;
-  margin: 20px;
+
 }
 
 .latest-content img {
-  max-width: 70%;
+  max-width: 80%;
   float: right;
   border-radius: 100%;
 
@@ -412,6 +408,10 @@ body.no-touch .boxInnerArtist:hover .titleBox, body.touch .boxInnerArtist.touchF
   padding-top: 40px;
   text-align: left;
   font-size: 1em;
+}
+
+.mix {
+  padding-top: 40px;
 }
 
 
@@ -452,6 +452,7 @@ body.no-touch .boxInnerArtist:hover .titleBox, body.touch .boxInnerArtist.touchF
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  padding-top: 60px;
 }
 
 .releaseItem {
@@ -465,9 +466,36 @@ body.no-touch .boxInnerArtist:hover .titleBox, body.touch .boxInnerArtist.touchF
 .releaseItem h1 {
   text-align: center;
   padding-top: 0;
+  padding-bottom: 0;
+
+}
+
+.releaseItem h2 {
+
 }
 
 .releaseItem img {
   width: 100%;
   border-radius: 100%;
+}
+
+#top {
+  width: 100%;
+  height: 200px;
+  background-repeat: no-repeat;
+  background-size: auto;
+  overflow: hidden;
+}
+
+#forth {
+  color: opacity: .5; -webkit-filter: grayscale(30%);
+}
+
+#mainbutton {
+  text-align: center;
+  display: inline-block;
+}
+
+.button {
+  text-align: center;
 }
