@@ -175,6 +175,7 @@ li.active a {
   background: white;
   opacity: 0.95;
   border-bottom: solid 0.7px;
+
 }
 
 .mobile {
@@ -475,7 +476,9 @@ body.no-touch .boxInnerArtist:hover .titleBox, body.touch .boxInnerArtist.touchF
   padding: 5px;
   box-shadow: 1px 1px 5px #888888;
 }
-
+.releaseItem:hover {
+  box-shadow: 1px 1px 25px #888888;
+}
 .releaseItem h1 {
   text-align: center;
   padding-top: 0;
@@ -507,6 +510,7 @@ body.no-touch .boxInnerArtist:hover .titleBox, body.touch .boxInnerArtist.touchF
 #mainbutton {
   text-align: center;
   display: inline-block;
+  box-shadow: 1px 1px 10px #888888;
 }
 
 .button {
