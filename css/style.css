@@ -173,6 +173,7 @@ li.active a {
   position: fixed;
   z-index: 999;
   background: white;
+  opacity: 0.95;
   border-bottom: solid 0.7px;
 }
 
@@ -364,6 +365,7 @@ body.no-touch .boxInnerArtist:hover .titleBox, body.touch .boxInnerArtist.touchF
   background-size: cover;
   background-position: center;
   position: relative;
+  margin-top: 10px;
 }
 
 .hero h1 {
@@ -431,6 +433,7 @@ body.no-touch .boxInnerArtist:hover .titleBox, body.touch .boxInnerArtist.touchF
   background-image: url("../img/screen-res.jpg");
   font-size: 1em;
   text-decoration: none;
+  margin-top: 10px;
 
 }
 
