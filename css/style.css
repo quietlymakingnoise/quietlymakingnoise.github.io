@@ -187,13 +187,14 @@ li.active a {
 .contentWrapper {
   width: 80%;
   margin: 0 auto;
-  padding-top: 60px;
-  padding-bottom: 60px;
+
 }
 
 .content {
   width: 100%;
   float: left;
+  padding-top: 60px;
+  padding-bottom: 60px;
 
 }
 
