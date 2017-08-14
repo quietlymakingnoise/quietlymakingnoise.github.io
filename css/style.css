@@ -23,7 +23,7 @@ button {
   background: none;
   border: 0.5px solid black;
   color: black;
-  margin-top: 20px;
+  margin-top: 60px;
 }
 
 * {
@@ -186,11 +186,12 @@ li.active a {
   width: 100%;
   float: left;
   padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 .content h1 {
   text-transform: uppercase;
-  text-decoration: underline;
+
   text-align: center;
   padding-top: 60px;
   padding-bottom: 20px;
@@ -342,7 +343,7 @@ body.no-touch .boxInnerArtist:hover .titleBox, body.touch .boxInnerArtist.touchF
 }
 
 .fa {
-  margin: 0 20px;
+  margin: 20px;
 }
 
 
@@ -498,4 +499,9 @@ body.no-touch .boxInnerArtist:hover .titleBox, body.touch .boxInnerArtist.touchF
 
 .button {
   text-align: center;
+}
+
+.iconsCenter {
+  text-align: center;
+  margin: 0 auto;
 }
