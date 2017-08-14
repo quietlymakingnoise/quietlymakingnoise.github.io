@@ -75,6 +75,10 @@
      font-size: 4em;
    }
 
+   .latest-container {
+     text-align: center;
+   }
+
 
 
 }
@@ -150,6 +154,11 @@
      width: 50%;
 
    }
+
+   .latest-container {
+     text-align: center;
+   }
+
 
 
 }
