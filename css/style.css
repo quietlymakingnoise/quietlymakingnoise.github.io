@@ -41,7 +41,7 @@ h3 {
   font-size: 1em;
   text-transform: uppercase;
   text-align: center;
-  padding-bottom: 30px;
+
 }
 
 img {
@@ -62,6 +62,10 @@ a {
 
 a:visited {
   color: black;
+}
+
+p {
+  padding-top: 20px;
 }
 
 
@@ -92,6 +96,10 @@ a:visited {
 
 #landerHeading {
   text-decoration: none;
+}
+
+#releaseImg: hover {
+
 }
 
 .vinyl {
@@ -156,7 +164,7 @@ li.active a {
   position: fixed;
   z-index: 999;
   background: white;
-  border-bottom: solid;
+  border-bottom: solid 0.7px;
 }
 
 .mobile {
@@ -169,7 +177,6 @@ li.active a {
 
 .contentWrapper {
   width: 80%;
-  min-height: calc(100vh - 70px);
   margin: 0 auto;
 }
 
@@ -184,7 +191,8 @@ li.active a {
   text-decoration: underline;
   text-align: center;
   padding-top: 60px;
-  padding-bottom: 30px;
+  padding-bottom: 40px;
+
 }
 
 .content p {
@@ -218,6 +226,21 @@ li.active a {
   position: relative;
   width: 20%;
   padding-bottom: 20%;
+
+}
+
+.boxInnerArtist h1 {
+  position: absolute;
+  text-decoration: none;
+  color: #fff;
+  /*margin: 50% auto;*/
+  text-align: center;
+  margin: 0;
+
+}
+
+.boxInnerArtist span {
+  background: black;
 }
 
 .boxInner {
@@ -227,6 +250,14 @@ li.active a {
   top: 10px;
   bottom: 10px;
   overflow: hidden;
+}
+
+.boxInner h1 {
+  position: absolute;
+  text-decoration: none;
+  color: #fff;
+  /*margin: 50% auto;*/
+
 }
 
 .boxInnerArtist {
@@ -262,6 +293,7 @@ li.active a {
   -moz-transition: all 0.3s ease-out;
   -o-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
+
 }
 
 .boxInnerArtist .titleBox {
@@ -279,6 +311,7 @@ li.active a {
   -moz-transition: all 0.3s ease-out;
   -o-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
+
 }
 
 body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleBox {
@@ -293,8 +326,10 @@ body.no-touch .boxInnerArtist:hover .titleBox, body.touch .boxInnerArtist.touchF
 /* INFO */
 
 .icons {
-  margin: 0 auto;
   text-align: center;
+  margin: 0 auto;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 .fa {
@@ -306,22 +341,40 @@ body.no-touch .boxInnerArtist:hover .titleBox, body.touch .boxInnerArtist.touchF
 
 .hero {
   background-image: url("../img/modularz.jpg");
-  border-bottom: solid;
-  height: 100vh;
+  height: 105vh;
   background-size: cover;
   background-position: center;
+  position: relative;
 }
 
 .hero h1 {
-  margin: 0;
-  padding-top: 40vh;
+  font-weight: 700;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin: 0px;
+  padding: 0px;
   color: white;
   font-size: 5em;
+
+  text-decoration: none;
 }
 
-.hero h1 span {
-  background: black;
+.stick {
+  font-weight: 700;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin: 0px;
+  padding: 0px;
+  color: white;
+  font-size: 5em;
+
+  text-decoration: none;
+
 }
+
+
 
 .latest-container {
   display: -webkit-flex;
@@ -344,6 +397,7 @@ body.no-touch .boxInnerArtist:hover .titleBox, body.touch .boxInnerArtist.touchF
   max-width: 70%;
   float: right;
   border-radius: 100%;
+
 }
 
 .latest-content h1 {
@@ -365,7 +419,13 @@ body.no-touch .boxInnerArtist:hover .titleBox, body.touch .boxInnerArtist.touchF
 
 #sdxn.hero {
   background-image: url("../img/screen-res.jpg");
-  font-size: 0.7em;
+  font-size: 1em;
+  text-decoration: none;
+
+}
+
+#sdxn.hero h1 {
+  text-decoration: none;
 }
 
 .audio-player {
@@ -377,4 +437,37 @@ body.no-touch .boxInnerArtist:hover .titleBox, body.touch .boxInnerArtist.touchF
 .audio-player audio {
   margin: 0 auto;
   width: 100%;
+}
+
+#releaseImg:hover {
+  opacity: 0.3;
+}
+
+#bioText  {
+  text-align: left;
+}
+
+.releaseGallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.releaseItem {
+  width: 30%;
+  text-align: center;
+  margin: 1%;
+  padding: 5px;
+  box-shadow: 1px 1px 5px #888888;
+}
+
+.releaseItem h1 {
+  text-align: center;
+  padding-top: 0;
+}
+
+.releaseItem img {
+  width: 100%;
+  border-radius: 100%;
 }

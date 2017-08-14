@@ -65,6 +65,11 @@
      float: center;
    }
 
+   .releaseItem {
+     width: 100%;
+      margin: 4%;
+   }
+
 
 
 }
@@ -136,6 +141,11 @@
      float: center;
    }
 
+   .releaseItem {
+     width: 50%;
+
+   }
+
 
 }
 @media only screen and (max-width : 1050px) and (min-width : 651px) {
@@ -152,6 +162,10 @@
 
    .mobile {
      display: none;
+   }
+
+   .releaseItem {
+     width: 45%;
    }
 }
 @media only screen and (max-width : 2500px) and (min-width : 1051px) {
