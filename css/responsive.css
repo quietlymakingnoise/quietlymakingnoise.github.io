@@ -79,6 +79,10 @@
      text-align: center;
    }
 
+   #instafeed img {
+     width: 100%;
+   }
+
 
 
 }
