@@ -1,16 +1,27 @@
-$(document).ready(function(){
+$(document).ready(function() {
     $('#fade').fadeIn(400);
 });
 
 $('#releaseImg').on('hover', function() {
-  opacity: 0.5;
+    opacity: 0.5;
 });
 
-document.addEventListener('play', function(e){
+document.addEventListener('play', function(e) {
     var audios = document.getElementsByTagName('audio');
-    for(var i = 0, len = audios.length; i < len;i++){
-        if(audios[i] != e.target){
+    for (var i = 0, len = audios.length; i < len; i++) {
+        if (audios[i] != e.target) {
             audios[i].pause();
         }
     }
 }, true);
+
+var feed = new Instafeed({
+    get: 'user',
+    userId: '5882151769',
+    limit:'30',
+    resolution: 'standard_resolution',
+    target: 'instafeed',
+    accessToken: '5882151769.ba6ff2c.b9c1c4afc5c44086bf93ed026854c1d0',
+    clientId: '	ba6ff2c31594481286faf391dfa76eba'
+});
+feed.run();

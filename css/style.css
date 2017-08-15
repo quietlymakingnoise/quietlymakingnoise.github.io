@@ -174,7 +174,7 @@ li.active a {
   z-index: 999;
   background: white;
   opacity: 0.95;
-  border-bottom: solid 0.7px;
+  box-shadow: 0px 3px 10px 0;
 
 }
 
@@ -474,19 +474,16 @@ body.no-touch .boxInnerArtist:hover .titleBox, body.touch .boxInnerArtist.touchF
   text-align: center;
   margin: 1%;
   padding: 5px;
-  box-shadow: 1px 1px 5px #888888;
+
 }
-.releaseItem:hover {
+
+#hover-able.releaseItem:hover {
   box-shadow: 1px 1px 25px #888888;
 }
 .releaseItem h1 {
   text-align: center;
   padding-top: 0;
   padding-bottom: 0;
-
-}
-
-.releaseItem h2 {
 
 }
 
@@ -525,4 +522,13 @@ body.no-touch .boxInnerArtist:hover .titleBox, body.touch .boxInnerArtist.touchF
 
 #mixcloud {
   padding-bottom: 60px;
+}
+
+#aboutHeading {
+  padding-top: 60px;
+}
+
+#instafeed img {
+  margin: 1%;
+  width: 30%;
 }
