@@ -15,10 +15,12 @@ document.addEventListener('play', function(e) {
     }
 }, true);
 
+
+
 var feed = new Instafeed({
     get: 'user',
     userId: '4039901141',
-    limit:'30',
+    limit:'6',
     resolution: 'standard_resolution',
     target: 'instafeed',
     accessToken: '5882151769.ba6ff2c.b9c1c4afc5c44086bf93ed026854c1d0',
@@ -29,7 +31,7 @@ feed.run();
 var feed2 = new Instafeed({
     get: 'user',
     userId: '5881343163',
-    limit:'30',
+    limit:'3',
     resolution: 'standard_resolution',
     target: 'instafeed2',
     accessToken: '5882151769.ba6ff2c.b9c1c4afc5c44086bf93ed026854c1d0',

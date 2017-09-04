@@ -111,6 +111,10 @@ p {
 
 }
 
+#heroVid {
+  padding-top: 6em;
+}
+
 .vinyl {
   display: inline-block;
   margin-top: 22px;
@@ -364,7 +368,8 @@ body.no-touch .boxInnerArtist:hover .titleBox, body.touch .boxInnerArtist.touchF
   background-image: url("../img/modularz.jpg");
   height: 105vh;
   background-size: cover;
-  background-position: center;
+  background-position: top center;
+  background-attachment: fixed;
   position: relative;
   margin-top: 10px;
 }
@@ -431,7 +436,12 @@ body.no-touch .boxInnerArtist:hover .titleBox, body.touch .boxInnerArtist.touchF
 /* Release */
 
 #sdxn.hero {
-  background-image: url("../img/screen-res.jpg");
+  background: rgba(0,0,0,0.2);
+  background-blend-mode: multiply;
+  background-image: url("../img/line-001905.png");
+  background-size: cover;
+  background-position: top center;
+  background-attachment: fixed;
   font-size: 1em;
   text-decoration: none;
   margin-top: 10px;
@@ -561,7 +571,7 @@ hr {
 }
 
 #instafeed img {
-  padding: 1em;
+  padding: 10px;
   width: 300px;
   height: 300px;
 }
@@ -580,4 +590,10 @@ hr {
   padding: 1em;
   width: 300px;
   height: 300px;
+}
+
+@media (max-width: 600px) {
+  #instafeed img, #instafeed2 img {
+    padding: 10px 0;
+  }
 }
