@@ -368,8 +368,6 @@ body.no-touch .boxInnerArtist:hover .titleBox, body.touch .boxInnerArtist.touchF
   background-image: url("../img/modularz.jpg");
   height: 105vh;
   background-size: cover;
-  background-position: top center;
-  background-attachment: fixed;
   position: relative;
   margin-top: 10px;
 }
