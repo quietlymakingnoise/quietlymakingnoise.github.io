@@ -1,8 +1,5 @@
 /* General Styling */
 
-html {
-  height: 100%;
-}
 
 body {
   font-family: 'Raleway', sans-serif;
@@ -131,19 +128,19 @@ p {
 
 /* Nav */
 
-nav {
+.desktop {
   margin: 20px;
   float: right;
   display: inline;
   text-align: center;
 }
 
-ul {
+.navbar-fixed ul {
   overflow: auto;
   list-style-type: none;
 }
 
-li {
+.navbar-fixed li {
   height: 20px;
   float: left;
   margin-right: 0;
@@ -151,11 +148,11 @@ li {
   padding: 0 20px;
 }
 
-li:last-child {
+.navbar-fixed li:last-child {
   border-right: none;
 }
 
-li a {
+.navbar-fixed li a {
   text-decoration: none;
   color: #000;
   text-transform: uppercase;
@@ -178,7 +175,11 @@ li.active a {
   z-index: 999;
   background: white;
   opacity: 0.95;
-  box-shadow: 0px 3px 10px 0;
+  -webkit-box-shadow: 0px 3px 10px 0;
+          box-shadow: 0px 3px 10px 0;
+ margin: 0;
+ padding: 0;
+
 
 }
 
@@ -186,6 +187,74 @@ li.active a {
   display: inline;
   float: left;
 }
+
+.mobile-menu li,a,p {
+  text-decoration: none;
+  list-style: none;
+  color: black;
+}
+
+.mobile-menu {
+  width: 100%;
+  height: 60px;
+  background: rgba(255,255,255,0.9);
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  display: none;
+
+}
+
+.mobile-menu-wrapper {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.mobile-menu-icon {
+  position: absolute;
+  font-size: 1.7em;
+  top: 0;
+  padding-top: 0.4em;
+}
+
+.mobile-menu-logo {
+  text-align: center;
+  font-size: 1.4em;
+  padding-top: 0.1em;
+  font-weight: 400;
+
+}
+
+.mobile-menu-links {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  height: 0;
+  overflow: hidden;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-transform: uppercase;
+  background: rgba(255,255,255,0.9);
+    background: rgba(255,255,255,0.9);
+    margin: 0;
+    padding: 0;
+    border-bottom: 2.5px solid black;
+}
+
+.mobile-menu-links > li {
+  padding-bottom: 1em;
+}
+
+.mobile-menu-links li:nth-child(1) {
+  padding-top: .7em;
+}
+
+.mobile-menu-open {
+  height: auto;
+}
+
 
 
 /* Page Border */
@@ -314,8 +383,6 @@ li.active a {
   padding: 10px;
   text-align: center;
   -webkit-transition: all 0.3s ease-out;
-  -moz-transition: all 0.3s ease-out;
-  -o-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
 
 }
@@ -332,8 +399,6 @@ li.active a {
   padding: 10px;
   text-align: center;
   -webkit-transition: all 0.3s ease-out;
-  -moz-transition: all 0.3s ease-out;
-  -o-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
 
 }
@@ -353,7 +418,9 @@ body.no-touch .boxInnerArtist:hover .titleBox, body.touch .boxInnerArtist.touchF
   text-align: left;
   padding-top: 80px;
   padding-bottom: 40px;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   clear: both;
 }
 
@@ -389,14 +456,22 @@ body.no-touch .boxInnerArtist:hover .titleBox, body.touch .boxInnerArtist.touchF
 
 
 .latest-container {
-  display: -webkit-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 100%;
   margin: 0 auto;
-  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   border-color: black;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-top: 40px;
 }
 
@@ -470,10 +545,18 @@ body.no-touch .boxInnerArtist:hover .titleBox, body.touch .boxInnerArtist.touchF
 }
 
 .releaseGallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding-top: 60px;
 }
 
@@ -486,7 +569,8 @@ body.no-touch .boxInnerArtist:hover .titleBox, body.touch .boxInnerArtist.touchF
 }
 
 #hover-able.releaseItem:hover {
-  box-shadow: 1px 1px 25px #888888;
+  -webkit-box-shadow: 1px 1px 25px #888888;
+          box-shadow: 1px 1px 25px #888888;
 }
 .releaseItem h1 {
   text-align: center;
@@ -509,13 +593,14 @@ body.no-touch .boxInnerArtist:hover .titleBox, body.touch .boxInnerArtist.touchF
 }
 
 #forth {
-  color: opacity: .5; -webkit-filter: grayscale(30%);
+  color: opacity; -webkit-filter: grayscale(30%);
 }
 
 #mainbutton {
   text-align: center;
   display: inline-block;
-  box-shadow: 1px 1px 10px #888888;
+  -webkit-box-shadow: 1px 1px 10px #888888;
+          box-shadow: 1px 1px 10px #888888;
 }
 
 .button {
@@ -553,19 +638,35 @@ hr {
 .sc {
   padding-top: 4em;
   margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 #instafeed {
   padding-top: 2em;
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 #instafeed img {
@@ -577,11 +678,21 @@ hr {
 #instafeed2 {
   padding-top: 4em;
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 #instafeed2 img {

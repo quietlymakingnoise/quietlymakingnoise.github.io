@@ -205,3 +205,12 @@
      display: none;
    }
 }
+
+@media(max-width: 840px) {
+  .navbar-fixed {
+    display: none;
+  }
+  .mobile-menu {
+    display: inline;
+  }
+}
