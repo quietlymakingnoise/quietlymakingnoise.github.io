@@ -213,4 +213,12 @@
   .mobile-menu {
     display: inline;
   }
+
+  .content {
+    padding-top: 30px;
+  }
+
+  #hero {
+    padding-top: 30px;
+  }
 }
