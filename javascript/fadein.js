@@ -14,3 +14,10 @@ document.addEventListener('play', function(e) {
         }
     }
 }, true);
+
+$('.mobile-menu-icon').click(function(){
+  $('.mobile-menu-links').toggleClass('mobile-menu-open',200);
+});
+$('li a').click(function(){
+  $('.mobile-menu-links').toggleClass('mobile-menu-open',200);
+});
