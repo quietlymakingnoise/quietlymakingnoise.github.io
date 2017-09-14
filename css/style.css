@@ -724,3 +724,16 @@ hr {
 	width: 100%;
 	height: 90%;
 }
+
+#mc_embed_signup {
+  margin-top: 4rem;
+  font-family: "Roboto";
+}
+
+#mc_embed_signup input.button {
+  font-family: "Roboto";
+  color: black;
+  background: white;
+  border: 2px solid black;
+  border-radius: 0;
+}

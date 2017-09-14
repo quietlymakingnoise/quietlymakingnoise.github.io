@@ -72,7 +72,7 @@
    }
 
    #sdxn.hero h1 {
-     padding-bottom: 50%;
+     padding-bottom: 80%;
      font-size: 2.5em;
    }
 
@@ -82,6 +82,10 @@
 
    #instafeed img {
      width: 100%;
+   }
+
+   .hero h1 {
+     top: 40%;
    }
 
 
