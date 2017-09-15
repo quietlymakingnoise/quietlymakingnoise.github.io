@@ -432,11 +432,32 @@ body.no-touch .boxInnerArtist:hover .titleBox, body.touch .boxInnerArtist.touchF
 /* ARTIST */
 
 .hero {
-  background-image: url("../img/modularz.jpg");
   height: 105vh;
   background-size: cover;
   position: relative;
   margin-top: 10px;
+}
+.hero-black  {
+  height: 105vh;
+  background-size: cover;
+  position: relative;
+  margin-top: 10px;
+  background-size: cover;
+  background-position: top center;
+  background-attachment: fixed;
+}
+
+.sam.hero{
+  background-image: url("../img/modularz.jpg");
+}
+
+.gf.hero-black {
+  background-image: url("../img/pink.png");
+  color: black;
+}
+
+.hero-black {
+  color: black;
 }
 
 .hero h1 {
@@ -447,6 +468,18 @@ body.no-touch .boxInnerArtist:hover .titleBox, body.touch .boxInnerArtist.touchF
   margin: 0px 16px;
   padding: 0px;
   color: white;
+  font-size: 5em;
+
+  text-decoration: none;
+}
+
+.hero-black h1 {
+  font-weight: 700;
+  text-align: center;
+  margin: 0px 16px;
+  padding: 0px;
+  padding-top: 1em;
+
   font-size: 5em;
 
   text-decoration: none;
@@ -614,7 +647,7 @@ body.no-touch .boxInnerArtist:hover .titleBox, body.touch .boxInnerArtist.touchF
 }
 
 #mixcloud {
-  padding: 2em;
+
 }
 
 #aboutHeading {
@@ -632,7 +665,7 @@ body.no-touch .boxInnerArtist:hover .titleBox, body.touch .boxInnerArtist.touchF
 }
 
 hr {
-  margin-top: 5em;
+  margin-top: 2em;
 }
 
 .sc {
